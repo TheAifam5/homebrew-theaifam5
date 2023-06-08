@@ -1,4 +1,4 @@
-# Theaifam5 Theaifam5
+# TheAifam5@Homebrew
 
 ## How do I install these formulae?
 

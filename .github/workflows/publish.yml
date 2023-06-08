@@ -1,6 +1,10 @@
 name: brew pr-pull
 on:
   pull_request_target:
+    paths:
+      - Formula/**
+      - Casks/**
+      - Aliases/**
     types:
       - labeled
 jobs:

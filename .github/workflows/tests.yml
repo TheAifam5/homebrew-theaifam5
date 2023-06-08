@@ -1,6 +1,10 @@
 name: brew test-bot
 on:
   push:
+    paths:
+      - Formula/**
+      - Casks/**
+      - Aliases/**
     branches:
       - main
   pull_request:

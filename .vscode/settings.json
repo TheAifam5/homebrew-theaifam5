@@ -1,0 +1,5 @@
+{
+  "dotenv.enableAutocloaking": false,
+  "ruby.useLanguageServer": true,
+  "ruby.useBundler": true
+}

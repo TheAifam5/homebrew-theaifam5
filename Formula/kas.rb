@@ -5,7 +5,7 @@ class Kas < Formula
   homepage "https://github.com/siemens/kas"
   url "https://github.com/siemens/kas/archive/4.0.tar.gz"
   sha256 "9af6ef028cb3bb00fe11185eb911f3bb941ad6fb207594de1190e03398f5c5eb"
-  license "Siemens AG"
+  license "MIT" # https://github.com/siemens/kas/issues/86
   head "https://github.com/siemens/kas.git", branch: "master"
 
   depends_on "python@3.11"

@@ -5,7 +5,7 @@ class FastbootEdl < Formula
   homepage "https://android.googlesource.com/platform/system/core/+/master/fastboot/"
   url "https://android.googlesource.com/platform/system/core/+archive/refs/tags/platform-tools-34.0.3/fastboot.tar.gz"
   sha256 "e583c8a1a7bdae22e8f5903a5e7581481857cd32ae5c145f3c8b29425dfe0622"
-  license "APL-2.0"
+  license "Apache-2.0"
 
   depends_on "openssl@3"
   depends_on "zlib"

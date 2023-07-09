@@ -1,4 +1,3 @@
-
 class FastbootEdl < Formula
   PLATFORM_SDK_VERSION = "34.0.3"
 

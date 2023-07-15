@@ -1,17 +1,23 @@
 cask "86box-nightly" do
-  version "3.11,4714"
-  sha256 "8e9d434c0fb460a2e6ca0b40bdbbfc5191d8827764757d19bf6a1560a58cdad7"
+  version :latest
+  sha256 :no_check
 
-  url "https://ci.86box.net/job/86Box/#{version.csv.second}/artifact/Old%20Recompiler%20(recommended)/macOS%20-%20Universal%20(Intel%20and%20Apple%20Silicon)/86Box-macOS-x86_64+arm64-#{version.csv.second}.zip",
-      verified: "github.com/86Box/86Box/"
+  url do
+    require "open-uri"
+    base_url = "https://ci.86box.net/job/86Box/lastSuccessfulBuild"
+    file = JSON.parse(URI.parse("#{base_url}/api/json").open.string)["artifacts"].find do |artifact|
+             artifact["fileName"].start_with?("86Box-macOS-")
+           end["relativePath"]
+    "#{base_url}/artifact/#{CGI.escape(file)}"
+  end
   name "86Box"
   desc "Emulator of x86-based machines based on PCem"
   homepage "https://86box.net/"
 
   livecheck do
-    url "https://ci.86box.net/job/86Box/api/json"
+    url "https://ci.86box.net/job/86Box/lastSuccessfulBuild/api/json"
     strategy :json do |json|
-      "3.11,#{json["lastStableBuild"]["number"]}"
+      "3.11,#{json["number"]}"
     end
   end
 

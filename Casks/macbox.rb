@@ -2,8 +2,7 @@ cask "macbox" do
   version "0.2.9"
   sha256 "f1c7715bd5e5ff4fb1458260025a376601cc3cee88e866bda4a12e1d50e1243a"
 
-  url "https://github.com/Moonif/MacBox/releases/download/#{version}/MacBox.app.zip",
-      verified: "github.com/Moonif/MacBox/"
+  url "https://github.com/Moonif/MacBox/releases/download/#{version}/MacBox.app.zip"
   name "MacBox for 86Box"
   desc "86Box emulator manager to make it easier to handle multiple virtual machines"
   homepage "https://github.com/Moonif/MacBox"

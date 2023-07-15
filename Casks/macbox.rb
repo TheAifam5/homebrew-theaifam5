@@ -31,6 +31,6 @@ cask "macbox" do
 
     Or use the nightly version from this tap:
 
-      brew install --cask theaifam5/86box-nightly
+      brew install --cask theaifam5/theaifam5/86box-nightly
   EOS
 end

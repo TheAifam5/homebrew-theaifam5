@@ -9,6 +9,7 @@ class Kas < Formula
   head "https://github.com/siemens/kas.git", branch: "master"
 
   depends_on "coreutils"
+  depends_on "libyaml"
   depends_on "python@3.11"
 
   resource "PyYAML" do

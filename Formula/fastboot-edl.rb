@@ -14,7 +14,7 @@ class FastbootEdl < Formula
   homepage "https://android.googlesource.com/platform/system/core/+/master/fastboot/"
   url "https://android.googlesource.com/platform/system/core/+archive/b2631b9ec54fc26a87b1ae8f603f7a899d090616/fastboot.tar.gz"
   version "34.0.3"
-  sha256 "696b83a184790d810679a604e0b39ffe5b23ff467917a50b70ed85215e0ac3bc"
+  sha256 "a2fa84c74107d0b1d3796865b37a1c0cc481204d4370349aeb9854970c263651"
   license "Apache-2.0"
 
   livecheck do
@@ -26,72 +26,72 @@ class FastbootEdl < Formula
 
   resource "libbuildversion" do
     url "https://android.googlesource.com/platform/build/soong/+archive/#{LIBBUILDVERSION_COMMIT_ID}/cc/libbuildversion.tar.gz"
-    sha256 "2c6d9e11aa454a7c6df496041d1bf403058ce7a2991580492fdfcc59b0df4b0f"
+    sha256 "901d05c3f3367481db554d339b42944b30f46ae736bd04bbd1f0032746c7e3bb"
   end
 
   resource "libbase" do
     url "https://android.googlesource.com/platform/system/libbase/+archive/#{LIBBASE_COMMIT_ID}.tar.gz"
-    sha256 "85ad09d751baf571be4daf7604ae55f17c786cb3637bcf3e18b63432e133f290"
+    sha256 "65c5b3e2996ebad4d82aff8cca03677c31400b3be61312c67edc5352f5f74f02"
   end
 
   resource "liblp" do
     url "https://android.googlesource.com/platform/system/core/+archive/#{CORE_COMMIT_ID}/fs_mgr/liblp.tar.gz"
-    sha256 "e353e8312cac628d8c4306519f6d495c20ecb0b24f25f3e538c4f7daec0fa5dd"
+    sha256 "85f701310865e979ffd6e6395c676171ed6cb29838ad1cb248616329f2be304d"
   end
 
   resource "libsparse" do
     url "https://android.googlesource.com/platform/system/core/+archive/#{CORE_COMMIT_ID}/libsparse.tar.gz"
-    sha256 "3153e612bb249c919b79f7cb3e1bda92602d7f13d6e60ceddbf137d5dcf5cacd"
+    sha256 "b80c10c04edf15db8ae628682bd552a9b85ef0b2031645e713df81d5a37a9ee9"
   end
 
   resource "libcutils" do
     url "https://android.googlesource.com/platform/system/core/+archive/#{CORE_COMMIT_ID}/libcutils.tar.gz"
-    sha256 "864024162ddfc84a6b7606241ac9088bd4d054620da9e67e2e2eafc0e0eda7e9"
+    sha256 "b7f7e2c44a0e8a76cd9a077b3339d8c4c367baf5fc9321ac1acf4db866e7f6f9"
   end
 
   resource "libstorage_literals" do
     url "https://android.googlesource.com/platform/system/core/+archive/#{CORE_COMMIT_ID}/fs_mgr/libstorage_literals.tar.gz"
-    sha256 "37abdb89faae2e74ac3cf69dc226a108e92f35ed2a7a050685786599eeada6ae"
+    sha256 "67bd6e79d71a6735c1533331795cb861fb90c80e623f9c0fd61f280b462d2a10"
   end
 
   resource "diagnose_usb" do
     url "https://android.googlesource.com/platform/system/core/+archive/#{CORE_COMMIT_ID}/diagnose_usb.tar.gz"
-    sha256 "7ce5dc5b0a8dd486c817302f7941668d52a6a59bf18ecd49c74faa951022030d"
+    sha256 "97fe85abf8dde34458d923e8e328eb1e8547c64a1347b2a65c249fbf80f77626"
   end
 
   resource "libziparchive" do
     url "https://android.googlesource.com/platform/system/libziparchive/+archive/#{LIBZIPARCHIVE_COMMIT_ID}.tar.gz"
-    sha256 "ca992e60dc7f22baf33a2c8cf941903f83952488004b13c35f5c9a80bc990a8d"
+    sha256 "2ce1150772629bd3b43fcab609cd110fcf49e6cde0cef25af21127438c2d2f01"
   end
 
   resource "liblog" do
     url "https://android.googlesource.com/platform/system/logging/+archive/#{LOGGING_COMMIT_ID}/liblog.tar.gz"
-    sha256 "d9f4289858b05d491bcf7808451fa30e9a6f9f14e8753fd3814ad29ac938894f"
+    sha256 "5bdf6fec73a755eb27662969ed6350a8e748de07e0f545537f18bed0fad35553"
   end
 
   resource "ext4_utils" do
     url "https://android.googlesource.com/platform/system/extras/+archive/#{EXTRAS_COMMIT_ID}/ext4_utils.tar.gz"
-    sha256 "db0329e9ff8224e877cc7b227fb4cd0a9c721f35a01ff882d98bdf4922c11c18"
+    sha256 "3d5dafaa210228175cd6b98cef6ee6dff1bd9ccfcd8a7b3fefa6932241957734"
   end
 
   resource "mkbootimg" do
     url "https://android.googlesource.com/platform/system/tools/mkbootimg/+archive/#{MKBOOTIMG_COMMIT_ID}.tar.gz"
-    sha256 "8f5847510fddc88f3ec7538ac58122968183d29f96430822eedafb64691381af"
+    sha256 "6bb595c666bbe29ad394e811db3a691adf9d11f536932cbf6d154b06cdb9e941"
   end
 
   resource "libfmt" do
     url "https://android.googlesource.com/platform/external/fmtlib/+archive/#{EXTERNAL_FMTLIB_COMMIT_ID}.tar.gz"
-    sha256 "7db1b58543d4983b459c4659966ff5cb60efc7f858f7825e7ca703704c1c7902"
+    sha256 "83b8f8abf4cea81ff13a5c37c1ffd4586edb8028ae9a60ece59a19c309d5b818"
   end
 
   resource "libavb" do
     url "https://android.googlesource.com/platform/external/avb/+archive/#{EXTERNAL_AVB_COMMIT_ID}.tar.gz"
-    sha256 "c4d1e1bf086eccfc3cb029fd8a0d73064e119adbe112eb5616ed7d05ea447333"
+    sha256 "a953f42bb1bfb164d378d39682c9b76082ae2645bd2b0482a8da303a21f5b286"
   end
 
   resource "googletest" do
     url "https://android.googlesource.com/platform/external/googletest/+archive/#{EXTERNAL_GOOGLETEST_COMMIT_ID}.tar.gz"
-    sha256 "696b83a184790d810679a604e0b39ffe5b23ff467917a50b70ed85215e0ac3bc"
+    sha256 "c855f5a21fe61d373684260a1c4a4a7678e744e41f1ec9e7854645178b8ca6bb"
   end
 
   def install

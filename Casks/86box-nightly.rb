@@ -8,7 +8,7 @@ cask "86box-nightly" do
     file = JSON.parse(URI.parse("#{base_url}/api/json").open.string)["artifacts"].find do |artifact|
              artifact["fileName"].start_with?("86Box-macOS-")
            end["relativePath"]
-    "#{base_url}/artifact/#{CGI.escape(file)}"
+    "#{base_url}/artifact/#{URI.escape(file)}"
   end
   name "86Box"
   desc "Emulator of x86-based machines based on PCem"

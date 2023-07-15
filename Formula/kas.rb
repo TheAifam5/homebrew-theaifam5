@@ -8,6 +8,12 @@ class Kas < Formula
   license "MIT" # https://github.com/siemens/kas/issues/86
   head "https://github.com/siemens/kas.git", branch: "master"
 
+  bottle do
+    root_url "https://ghcr.io/v2/theaifam5/theaifam5"
+    sha256 cellar: :any,                 ventura:      "1b95f9a16606b168210ed20be11476bc612db08581e205d4c534a0bc268408fc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5fe4b7cc4c861e36aabc3f81872bbe7d4c6467f299664f22a3785dde14b813e8"
+  end
+
   depends_on "coreutils"
   depends_on "libyaml"
   depends_on "python@3.11"

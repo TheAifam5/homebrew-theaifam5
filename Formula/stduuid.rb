@@ -6,6 +6,12 @@ class Stduuid < Formula
   license "MIT"
   head "https://github.com/mariusbancila/stduuid.git", branch: "master"
 
+  bottle do
+    root_url "https://ghcr.io/v2/theaifam5/theaifam5"
+    sha256 cellar: :any_skip_relocation, ventura:      "d5ce9afb4258d81a3a4744ebc40a7dced254bcf6614e63fd4a63fea4f5708d40"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "6fe8749302aaad58b32ca661440ef0daa7a9ebe7e926f4643db84014a9b50a43"
+  end
+
   option "with-system-generator", "Enable operating system uuid generator"
   option "with-time-generator", "Enable experimental time-based uuid generator"
   option "with-cxx20-span", "Using span from std instead of gsl"

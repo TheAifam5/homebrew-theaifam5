@@ -14,13 +14,6 @@ cask "86box-nightly" do
   desc "Emulator of x86-based machines based on PCem"
   homepage "https://86box.net/"
 
-  livecheck do
-    url "https://ci.86box.net/job/86Box/lastSuccessfulBuild/api/json"
-    strategy :json do |json|
-      "3.11,#{json["number"]}"
-    end
-  end
-
   conflicts_with cask: "86box"
   depends_on macos: ">= :high_sierra"
 

@@ -14,7 +14,7 @@ cask "86box-nightly" do
   desc "Emulator of x86-based machines based on PCem"
   homepage "https://86box.net/"
 
-  conflicts_with cask: "86box"
+  conflicts_with cask: ["86box", "86box-ndr-nightly"]
   depends_on macos: ">= :high_sierra"
 
   app "86Box.app", target: "86Box/86Box.app"
